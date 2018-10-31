@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/xdrfile_test.dir/src/tests/test.c.o  -o xdrfile_test -Wl,-rpath,/scratch/kjong/hbnetwork/libxdrfile-master/build/lib -lm lib/libxdrfile.so.2.1.2 

@@ -1,0 +1,66 @@
+#####################################
+Warning : You can change 
+mkdir /scratch/username/.hbnet
+
+1)Gromacs installation (gromacs-2016.4.tar.gz)
+
+tar -xvzf gromacs-2016.4.tar.gz 
+
+cd  gromacs-2016.4
+
+rm -r build
+
+mkdir build
+
+cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON -DCMAKE_INSTALL_PREFIX=/scratch/username/.hbnet
+ 
+-DBUILD_SHARED_LIBS=OFF -DGMX_PREFER_STATIC_LIBS=ON (for clusters)
+ 
+make -j 3
+ 
+make install
+ 
+source /scratch/username/.hbnet/bin/GMXRC 
+ 
+2)Libxdr library (libxdrfile-master.tar.gz)
+ 
+tar -xvzf libxdrfile-master.tar.gz 
+
+cd  libxdrfile-master
+
+rm -r build
+
+
+mkdir build
+ 
+cmake .. -DCMAKE_INSTALL_PREFIX=/scratch/username/.hbnet/
+make
+make install
+ 
+3)Libgmxcpp library (libgmxcpp-5.0.2.tar.gz)
+ 
+tar -xvzf libgmxcpp-5.0.2.tar.gz 
+
+cd libgmxcpp-5.0.2 
+
+rm -r build
+
+-Check the version of Gromacs with MPI or not and change the "src/CMakeLists.txt" file
+	LIBGROMACS gromacs_mpi 
+	or
+	LIBGROMACS gromacs 
+ 
+mkdir build
+cmake .. -DCMAKE_INSTALL_PREFIX=/scratch/username/.hbnet/
+make
+make install
+
+4)Hbnetwork Folder (ksp_xtc_cpp_all_ends.tar.gz)
+Make all connections of LIB and INCLUDE with previously installed directory
+
+make
+
+
+##############################################################################################
+
+Please check foler "hbnetwork_demo" for real calculation

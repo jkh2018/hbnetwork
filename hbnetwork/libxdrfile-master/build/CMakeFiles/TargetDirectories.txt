@@ -1,0 +1,9 @@
+/scratch/kjong/hbnetwork/libxdrfile-master/build/CMakeFiles/install/strip.dir
+/scratch/kjong/hbnetwork/libxdrfile-master/build/CMakeFiles/install/local.dir
+/scratch/kjong/hbnetwork/libxdrfile-master/build/CMakeFiles/install.dir
+/scratch/kjong/hbnetwork/libxdrfile-master/build/CMakeFiles/list_install_components.dir
+/scratch/kjong/hbnetwork/libxdrfile-master/build/CMakeFiles/rebuild_cache.dir
+/scratch/kjong/hbnetwork/libxdrfile-master/build/CMakeFiles/xdrfile.dir
+/scratch/kjong/hbnetwork/libxdrfile-master/build/CMakeFiles/xdrfile_test.dir
+/scratch/kjong/hbnetwork/libxdrfile-master/build/CMakeFiles/test.dir
+/scratch/kjong/hbnetwork/libxdrfile-master/build/CMakeFiles/edit_cache.dir

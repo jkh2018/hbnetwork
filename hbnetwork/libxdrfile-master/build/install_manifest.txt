@@ -1,0 +1,11 @@
+/scratch/kjong/.hbnet/lib/libxdrfile.so.2.1.2
+/scratch/kjong/.hbnet/lib/libxdrfile.so.2.1
+/scratch/kjong/.hbnet/lib/libxdrfile.so
+/scratch/kjong/.hbnet/include/xtc_seek.h
+/scratch/kjong/.hbnet/include/xdrfile.h
+/scratch/kjong/.hbnet/include/trr_seek.h
+/scratch/kjong/.hbnet/include/xdrfile_trr.h
+/scratch/kjong/.hbnet/include/xdrfile_xtc.h
+/scratch/kjong/.hbnet/lib/pkgconfig/libxdrfile.pc
+/scratch/kjong/.hbnet/lib/cmake/xdrfile-2.1.2/xdrfile-config.cmake
+/scratch/kjong/.hbnet/lib/cmake/xdrfile-2.1.2/xdrfile-config-version.cmake

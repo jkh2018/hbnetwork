@@ -1,0 +1,67 @@
+#first and last frame of your calculation (with timestep)
+first_frame 0
+last_frame 1
+
+#Trajectory, topology, index file 
+xtcfile ../new.xtc 
+topolfile ../md.tpr 
+ndxfile wycliff_index.ndx
+
+#Index file:GROUP input for hydrogen bond analysis and hydration shell analysis
+Hbond_donor_grp    N-HBOND
+Hbond_H_grp        H-HBOND
+Hbond_acceptor_grp O-HBOND
+water_grp          SOL
+active_heavy_grp   HEAVY_ACTIVE_GROUP
+active_all_grp     ALL_ACTIVE_GROUP
+
+#Type of water model :Tip3p (3) or Tip4p (4)
+WDIM 3
+
+#VMD visualization: last residue index of protein "resid"
+last_protein_residue 120 
+
+#Output file of your calculation
+outfile test
+
+#HB-Network:
+
+#Type of Network: "DA", "DD", "AA", "DADDAA", "no"
+ring_id DA
+#wieght: "weigth" or "binary"
+weight_id weight 
+#directionality: "directed" or "undirected"
+direct_id directed
+#kth shortest path
+k_max 1
+#Printing nodes on the path: "T" or "F"
+path_print T
+#Definition of HBond for binary network: unit [nm] and [degree]
+hb_dist_cut 0.35
+hb_ang_cut 30
+#Definition of HBond for weight network: unit [nm] and [degree]
+hb_weight_dist_cut 0.6
+dist_DA_D0 0.0
+dist_DA_R0 0.37
+dist_HA_D0 0.0
+dist_HA_R0 0.27
+ang_D0 0
+ang_R0 40
+
+#Hydration shell analysis: "T" or "F"
+shell_analysis F
+#Definition of hydration shell: unit [nm]
+r_shell_1_N_O 0.35
+r_shell_1_C 0.5
+r_shell_bulk 1.2
+#Creteria of residence population of water in hydration shell(*100%)
+pop_shell 0.3
+#Maximum time lag for autocorrelation function
+max_lag 5000
+
+#Scrambling Analysis of Hbond network: "T" or "F"
+scrambling_analysis F
+#First and Last time of analysis
+scrambling_ti 0
+scrambling_tf 1000
+
